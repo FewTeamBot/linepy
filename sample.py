@@ -5,33 +5,23 @@ from time import sleep
 from bs4 import BeautifulSoup
 import time, random, multiprocessing, sys, json, codecs, threading, glob, re, string, os, requests, subprocess, six, urllib, urllib.parse
 
-# Untuk Login Via Qr link 
-#line = LINE()
-#line.log("Auth Token : " + str(line.authToken))
-#line.log("Timeline Token : " + str(line.tl.channelAccessToken))
-
-# Untuk Login Via Email & password
-#line = LINE('EMAIL', 'PASSWORD')
-#line.log("Auth Token : " + str(line.authToken))
-#line.log("Timeline Token : " + str(line.tl.channelAccessToken))
-
-line = LINE("Token disini")
+line = LINE()
 line.log("Auth Token : " + str(line.authToken))
 line.log("Timeline Token : " + str(line.tl.channelAccessToken))
 
-ki = LINE("Token disini")
+ki = LINE()
 ki.log("Auth Token : " + str(ki.authToken))
 ki.log("Timeline Token : " + str(ki.tl.channelAccessToken))
 
-kk = LINE("Token disini")
+kk = LINE()
 kk.log("Auth Token : " + str(kk.authToken))
 kk.log("Timeline Token : " + str(kk.tl.channelAccessToken))
 
-kc = LINE("Token disini")
+kc = LINE()
 kc.log("Auth Token : " + str(kc.authToken))
 kc.log("Timeline Token : " + str(kc.tl.channelAccessToken))
 
-ks = LINE("Token disini")
+ks = LINE()
 ks.log("Auth Token : " + str(ks.authToken))
 ks.log("Timeline Token : " + str(ks.tl.channelAccessToken))
 
@@ -177,7 +167,7 @@ def bot(op):
             #---------------------- Start Command ------------------------#
                         
                         if text.lower() == "menu":
-                            md = "🔰|RA|Family Staff\n\n"
+                            md = "Anarchy Menu\n\n"
                             md += "[01] .cek「@」\n"
                             md += "[02] .gid\n"
                             md += "[03] .yid\n"
@@ -196,7 +186,7 @@ def bot(op):
                             
                         elif text.lower() == ".pengaturan":
                             if msg._from in RASuper:
-                                md = "🔰|RA|Family\n\n"
+                                md = "Anarchy Settings\n\n"
                                 if Setmain["RAautoscan"] == True: md+="✅ Cekmid\n"
                                 else: md+="❎ Cekmid\n"
                                 if Setmain["RAautoread"] == True: md+="✅ Autoread\n"
